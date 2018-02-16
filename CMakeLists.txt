@@ -10,7 +10,6 @@ file(MAKE_DIRECTORY ${CATKIN_DEVEL_PREFIX}/include)
 
 ExternalProject_Add(dbow2_src
   GIT_REPOSITORY https://github.com/dorian3d/DBoW2
-  GIT_TAG 4a6eed2b3ae35ed6837c8ba226b55b30faaf419d
   CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${CATKIN_DEVEL_PREFIX}
   BUILD_COMMAND CXXFLAGS=-i${CATKIN_DEVEL_PREFIX}/include make
   INSTALL_COMMAND make install
